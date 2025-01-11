@@ -4,22 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Navbar</title>
 </head>
 
-<body>
-    <nav class="flex justify-around bg-red-400 h-16 items-center">
-        <ul class="flex gap-4 align-middle background ">
-            <li>home</li>
-            <li>about</li>
-            <li>blog</li>
-            <li>produts</li>
-        </ul>
+<body class="font-sans bg-gray-100">
+    <div class="bg-white text-gray-800 p-4 flex justify-between items-center border-b border-gray-300">
+        <!-- Logo -->
+        <div class="text-xl font-bold">
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                alt="logo" class="w-40">
+        </div>
 
-        <h2 class="align-middle">ANiket</h2>
-    </nav>
+        <!-- Search Bar -->
+        <div class="flex items-center space-x-2 border border-gray-200 rounded-md px-4 py-1 bg-gray-50">
+            <i class="fas fa-search text-gray-500"></i>
+            <input type="text" placeholder="Search for Products, Brands and More"
+                class="outline-none border-none text-gray-600 w-96 bg-gray-50">
+        </div>
+
+        <!--  Login, Cart, Become Seller -->
+        <div class="flex space-x-6 items-center">
+            <a href="#login" class="flex items-center space-x-1 text-gray-800 hover:underline">
+                <i class="fas fa-user text-gray-800"></i>
+                <span>Login</span>
+            </a>
+            <a href="#cart" class="flex items-center space-x-1 text-gray-800 hover:underline">
+                <i class="fas fa-shopping-cart text-gray-800"></i>
+                <span>Cart</span>
+            </a>
+            <a href="#seller" class="flex items-center space-x-1 text-gray-800 hover:underline">
+                <i class="fas fa-store text-gray-800"></i>
+                <span>Become a Seller</span>
+            </a>
+            <button class="text-gray-800 hover:underline">
+                <i class="fas fa-ellipsis-h text-gray-800"></i>
+            </button>
+        </div>
+    </div>
 </body>
 
 </html>
