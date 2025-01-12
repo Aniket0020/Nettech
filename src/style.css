@@ -4,3 +4,8 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Dropdown menu visibility on hover */
+.group:hover .dropdown {
+    display: block;
+}
