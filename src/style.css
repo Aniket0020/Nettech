@@ -1,11 +1,32 @@
-body {
-    background-color: #f1f2f4;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+ body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-/* Dropdown menu visibility on hover */
-.group:hover .dropdown {
-    display: block;
-}
+ .slider {
+     position: relative;
+     width: 100%;
+     max-width: 1425px;
+     margin: 0px auto;
+     overflow: hidden;
+
+ }
+
+ .slides {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+ }
+
+ .slide {
+     flex-shrink: 0;
+     width: 100%;
+     position: relative;
+ }
+
+ .slide img {
+     width: 100%;
+
+     object-fit: cover;
+
+ }
